@@ -1,0 +1,70 @@
+.gamanet-secondary-btn.btn.btn-primary {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 1px solid #f48220;
+  height: 2.5rem;
+  padding: 0 1rem;
+  color: #f48220;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gamanet-secondary-btn.btn.btn-primary.sm {
+  height: 2rem;
+  padding: 0 0.75rem;
+  font-weight: 500;
+}
+
+.gamanet-secondary-btn.btn.btn-primary img {
+  filter: invert(53%) sepia(81%) saturate(823%) hue-rotate(345deg) brightness(97%) contrast(96%);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.gamanet-secondary-btn.btn.btn-primary.sm img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.gamanet-secondary-btn.btn.btn-primary:hover {
+  color: #e66d05;
+  background-color: #fbf2e9;
+  border: 1px solid #e66d05;
+  outline: none;
+}
+
+.gamanet-secondary-btn.btn.btn-primary:hover img {
+  filter: invert(49%) sepia(83%) saturate(3539%) hue-rotate(8deg) brightness(99%) contrast(96%);
+}
+
+.gamanet-secondary-btn.btn.btn-primary:focus, .gamanet-secondary-btn.btn.btn-primary:active {
+  color: #f48220;
+  background-color: #fefaf6;
+  outline: 4px solid #f9e7d8;
+  border: 1px solid #f48220;
+}
+
+.gamanet-secondary-btn.btn.btn-primary:focus img, .gamanet-secondary-btn.btn.btn-primary:active img {
+  filter: invert(53%) sepia(81%) saturate(823%) hue-rotate(345deg) brightness(97%) contrast(96%);
+}
+
+@media (max-width: 768px) {
+  .gamanet-secondary-btn.btn.btn-primary {
+    font-weight: 500;
+    height: 2rem;
+    padding: 0 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .gamanet-secondary-btn.btn.btn-primary img {
+    width: 20px;
+    height: 20px;
+  }
+}
+

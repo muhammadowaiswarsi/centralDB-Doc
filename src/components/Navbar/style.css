@@ -1,0 +1,38 @@
+.navDiv {
+    background-color: #ffffff;
+    border-bottom-style: solid;
+    border-color: rgb(244, 244, 244);
+}
+
+.whiteBackground {
+    background-color: white;
+}
+
+.button {
+    background: #20c997;
+    color: rgb(255, 255, 255);
+    border-color: #20c997;
+    border-bottom-color: #22814d;
+}
+
+.button:hover {
+    background: #20c997;
+    color: rgb(255, 255, 255);
+    border-color: #20c997;
+    border-bottom-color: #22814d;
+}
+
+.searchInput {
+    background: #EFEEF8;
+    border-color: #EFEEF8;
+}
+
+.navLink {
+    color: #5E77FF !important;
+}
+
+@media screen and (max-width: 340px) {
+    .searchInput {
+        display: none;
+    }
+}

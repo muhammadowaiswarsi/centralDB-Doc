@@ -1,0 +1,28 @@
+.copy-icon-button {
+  border: 1px solid transparent;
+  outline: none;
+  padding: 6px;
+  border-radius: 6px;
+  background: transparent;
+  color: transparent;
+  position: absolute;
+  right: 5px;
+}
+
+.copy-icon-button:hover {
+  border: 1px solid #828282;
+  color: #828282;
+  background-color: lightgray;
+}
+
+.mainDiv {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: auto;
+  background-color: lightgray;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+}

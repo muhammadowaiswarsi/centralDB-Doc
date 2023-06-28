@@ -1,0 +1,74 @@
+.custom-section1 {
+  background: linear-gradient(rgba(255, 255, 255, 0.57) 31%, rgba(255, 255, 255, 0.63) 88%),
+    url("../../../assets/img/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a564d6d76496d636836565535706332566b74593175772e676966.gif") center / auto;
+}
+
+.custom-paragraph {
+  font-size: 14px;
+  color: var(--bs-gray-600);
+}
+
+.custom-link {
+  font-size: 12px;
+  color: var(--bs-primary);
+}
+
+.custom-span {
+  font-size: 14px;
+}
+
+.custom-span-small {
+  font-size: 10px;
+  margin-left: 12px;
+  color: var(--bs-gray-600);
+}
+
+.custom-iconBlue {
+  color: var(--bs-blue);
+  font-size: 28px;
+  margin-top: 4px;
+}
+
+.custom-iconGreen {
+  color: #20c997;
+  font-size: 28px;
+  margin-top: 4px;
+}
+
+.custom-card {
+  background-position: center / cover;
+}
+
+/* for first card */
+.custom-text1-title1 {
+  color: #FFFFFF;
+}
+
+/* for first card */
+.custom-text1-title2 {
+  color: #212529;
+}
+
+.custom-button {
+  background: var(--bs-teal);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  box-shadow: 0px 0px rgb(0, 0, 0);
+  border-color: var(--bs-teal);
+}
+
+.custom-button:hover {
+  background: var(--bs-teal);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  box-shadow: 0px 0px rgb(0, 0, 0);
+  border-color: var(--bs-teal);
+}
+
+.custom-card1 {
+  background: url('../../../assets/img/back-school-pattern-background-set-different-drawings-related-school-blue-color_153454-35.avif') center / cover;
+}
+
+.custom-card2 {
+  background: url('../../../assets/img/watercolor-design-back-school-background_23-2148593945.avif') center / cover;
+}
