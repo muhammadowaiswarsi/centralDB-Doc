@@ -13,17 +13,22 @@ const Footer = () => {
                             <p class="d-inline-block">Copyright © Softywa LTD | CentralDB . All rights reserved.</p>
                         </div>
                         <div class="d-inline-block legal-links">
-                            <div class="d-inline-block item">
-                                <h5>Privacy Policy</h5>
+                        <div class="d-inline-block item">
+                                <a href="/privacy-policy">
+                                <h5>Privacy Policy</h5></a>
                             </div>
                             <div class="d-inline-block item">
-                                <h5>Terms of Use</h5>
                             </div>
                             <div class="d-inline-block item">
-                                <h5>Legal</h5>
+                                <a href="/terms-of-use">
+                                <h5>Terms of Use</h5></a>
                             </div>
                             <div class="d-inline-block item">
-                                <a style={{ textDecoration: "none", color: "black" }} href="/license">
+                                <a href="/legal">
+                                <h5>Legal</h5></a>
+                            </div>
+                            <div class="d-inline-block item">
+                                <a href="/license">
                                     <h5 >License</h5></a>
                             </div>
                         </div>
