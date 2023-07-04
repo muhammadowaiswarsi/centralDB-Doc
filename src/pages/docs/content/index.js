@@ -4,12 +4,12 @@ import '../style.css';
 
 const Content = () => {
   return (
-    <div class='container mt-4 mb-4'>
-      <div class='row justify-content-center'>
-        <div class='col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1'>
-          <div className='steps'>
-            <h1 class='text-center'>C7 (Central' Generation Seven)</h1>
-            <p class='text-center'>
+    <div class='container mt-3 m-bottom'>
+      <div class='row'>
+        <div class='col-lg-9 col-lg-offset-2 col-md-11 col-md-offset-1 m-auto'>
+          <div id='C7-Central-Generation-Seven'>
+            <h1 >C7 (Central' Generation Seven)</h1>
+            <p>
               C7 (Central' Generation Seven) is a blockchain based on the X11 algorithm, designed
               for transmitting data through the block explorer. We have opted to remove Mysql and
               other databases in favor of a decentralized database (C7) to optimize trust. This
@@ -24,8 +24,8 @@ const Content = () => {
             <CodeSnippet text={'sudo apt-get update'} />
             <CodeSnippet text={'sudo apt-get upgrade'} />
           </div>
-          <div className='steps'>
-            <h2 class='text-center'>Install the required dependencies.</h2>
+          <div className='steps' id='Required-dependencies'>
+            <h2 >Install the required dependencies.</h2>
             <CodeSnippet
               text={
                 ' sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3 '
@@ -43,14 +43,14 @@ const Content = () => {
               }
             />
           </div>
-          <div className='steps'>
-            <h2 class='text-center'>Install Berkeley DB for C7 (Central Generation Seven).</h2>
+          <div className='steps' id='Install-Berkeley-DB'>
+            <h2 >Install Berkeley DB for C7 (Central Generation Seven).</h2>
             <CodeSnippet text={'  sudo add-apt-repository ppa:bitcoin/bitcoin '} />
             <CodeSnippet text={'  sudo apt-get update '} />
             <CodeSnippet text={' sudo apt-get install libdb4.8-dev libdb4.8++-dev'} />
           </div>
-          <div className='steps'>
-            <h2 class='text-center'>Download the C7 and tools from Openc7.</h2>
+          <div className='steps' id='Download-the-C7-and-tools-from-Openc7'>
+            <h2 >Download the C7 and tools from Openc7.</h2>
             <p>
               Manually Install <span style={{ color: 'blue' }}> Download daemon </span>
             </p>
@@ -68,22 +68,22 @@ const Content = () => {
               }
             />
           </div>
-          <div className='steps'>
-            <h2 class='text-center'>Extract the tar files.</h2>
+          <div className='steps' id='Extract-tar-files'>
+            <h2 >Extract the tar files.</h2>
             <CodeSnippet text={' tar -xzvf c7-daemon-linux.tar.gz'} />
             <CodeSnippet text={' tar -xzvf c7-qt-linux.tar.gz'} />
           </div>
-          <div>
-            <h2 class='text-center'>Install the OpenC7 and tools.</h2>
+          <div className='steps' id='Install-OpenC7-tools'>
+            <h2>Install the OpenC7 and tools.</h2>
             <CodeSnippet text={'  sudo mv c7 c7-cli c7-tx /usr/bin/'} />
           </div>
-          <div>
-            <h2 class='text-center'>Create the config file.</h2>
+          <div className='steps' id='Create-config-file'>
+            <h2 className='mb-4'>Create the config file.</h2>
             <CodeSnippet text={'  mkdir $HOME/.c7'} />
             <CodeSnippet text={' nano $HOME/.c7/c7.conf'} />
           </div>
-          <div>
-            <h2 class='text-center'>Paste the following lines in c7.conf.</h2>
+          <div className='steps' id='Paste-following-lines-in-c7'>
+            <h2 >Paste the following lines in c7.conf.</h2>
             <CodeSnippet
               text={
                 'rpcuser=???\nrpcpassword=???\nrpcallowip=127.0.0.1\nrpcport=10037\nlisten=1\nserver=1\naddnode=node.openc7.com'
@@ -97,3 +97,15 @@ const Content = () => {
 };
 
 export default Content;
+
+
+export const sidebarLinks = [
+  { key: '1', value: 'Generation Seven', id: '#C7-Central-Generation-Seven', },
+  { key: '2', value: 'Required dependencies', id: '#Required-dependencies' },
+  { key: '3', value: 'Install Berkeley DB', id: '#Install-Berkeley-DB' },
+  { key: '4', value: 'Download C7 tools', id: '#Download-the-C7-and-tools-from-Openc7' },
+  { key: '5', value: 'Extract tar files', id: '#Extract-tar-files' },
+  { key: '6', value: 'Install OpenC7 tools.', id: '#Install-OpenC7-tools' },
+  { key: '7', value: 'Create config file', id: '#Create-config-file' },
+  { key: '8', value: 'Paste lines in c7.conf', id: '#Paste-following-lines-in-c7' },
+];

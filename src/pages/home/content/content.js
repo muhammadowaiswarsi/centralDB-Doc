@@ -17,7 +17,7 @@ const Content = () => {
                                 <div className="card-body pt-0 pb-0">
                                     <div className="row align-items-center no-gutters">
                                         <div className="col me-2">
-                                            <div className="text-uppercase text-primary fw-bold text-xs mb-1"><span className="custom-link"><a href="/">local download</a></span></div>
+                                            <div className="text-uppercase text-primary fw-bold text-xs mb-1"><span className="custom-link"><a href="#">local download</a></span></div>
                                             <div className="text-dark fw-bold h5 mb-0"><span className="custom-span">C7STW</span><span className="custom-span-small">V12.24.5.2</span></div>
                                         </div>
                                         <div className="col-auto"><i className="fas fa-cloud-download-alt fa-2x custom-iconBlue" title="V12.24.5.2 - running ubuntu 17.04"></i></div>
@@ -30,7 +30,7 @@ const Content = () => {
                                 <div className="card-body pt-0 pb-0">
                                     <div className="row align-items-center no-gutters">
                                         <div className="col me-2">
-                                            <div className="text-uppercase text-primary fw-bold text-xs mb-1"><span className="custom-link"><a href="/">CLOUD INSTALLER</a></span></div>
+                                            <div className="text-uppercase text-primary fw-bold text-xs mb-1"><span className="custom-link"><a href="#">CLOUD INSTALLER</a></span></div>
                                             <div className="text-dark fw-bold h5 mb-0"><span className="custom-span">OC7C</span><span className="custom-span-small">V12.3.4.88</span></div>
                                         </div>
                                         <div className="col-auto">

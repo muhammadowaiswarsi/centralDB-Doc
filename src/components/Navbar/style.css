@@ -15,11 +15,15 @@
     border-bottom-color: #22814d;
 }
 
-.button:hover {
-    background: #20c997;
-    color: rgb(255, 255, 255);
-    border-color: #20c997;
-    border-bottom-color: #22814d;
+.btn-hover {
+    margin-right: 5px;
+}
+
+.btn-hover:hover {
+    background-color: #20c99698;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 500;
 }
 
 .searchInput {
@@ -27,12 +31,34 @@
     border-color: #EFEEF8;
 }
 
-.navLink {
-    color: #5E77FF !important;
+
+
+
+.actives {
+    color: black;
+    background-color: #20c9964a;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+
+.toggle {
+    display: none;
 }
 
 @media screen and (max-width: 340px) {
     .searchInput {
         display: none;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    .toggle {
+        display: block;
+        margin-right: 10px;
+        font-size: 30px;
+        cursor: pointer;
     }
 }

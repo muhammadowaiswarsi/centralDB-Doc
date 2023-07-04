@@ -4,7 +4,7 @@ const Content = () => {
   return (
     <div className='container mt-4 mb-4'>
       <div className='row justify-content-center'>
-        <div className='col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1'>
+        <div >
           <div className='text'>
             <h1>Legal</h1>
             <p>

@@ -1,77 +1,94 @@
-import React, { useState } from 'react';
-import { Container, Row, Col, Button, Collapse,  } from 'react-bootstrap';
-import Content from "../../pages/docs/content";
-// import Navbar from '../Navbar';
-// import Footer from '../Footer';
+import React, { Component, useEffect, useState } from 'react';
+import { Row, Col } from 'react-bootstrap';
+import {  useNavigate } from 'react-router';
+import './style.css';
 
+const App = ({ shown, setIsShown, sidebarLinks, Component }) => {
+  const [activeSection, setActiveSection] = useState(sidebarLinks[0].id);
+  const navigate = useNavigate();
+  console.log(activeSection,"activeSection")
 
-const App = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
-  const [activeContent, setActiveContent] = useState(0);
-
-  const toggleCollapse = () => {
-    setIsCollapsed(!isCollapsed);
+useEffect(() => {
+  const handleResize = () => {
+    if (window.innerWidth > 600) {
+      setIsShown(true);
+    }
   };
 
-  const handleContentSwitch = (content) => {
-    setActiveContent(content);
+  const handleScroll = () => {
+    const sections = sidebarLinks.map((item) => item.id);
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const bodyHeight = document.body.clientHeight;
+
+    const bottomScrollPosition = bodyHeight - windowHeight;
+
+    if (scrollPosition >= bottomScrollPosition) {
+      setActiveSection(sections[sections.length - 1]);
+      return;
+    }
+
+    let currentSection = '';
+    for (let i = sections.length - 1; i >= 0; i--) {
+      const section = document.getElementById(sections[i]?.slice(1));
+      const sectionTop = section.offsetTop - 155.44;
+      const sectionBottom = sectionTop + section.offsetHeight;
+
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        currentSection = sections[i];
+        break;
+      }
+    }
+    if (scrollPosition < document.getElementById(sections[0]?.slice(1))?.offsetTop - 155.44) {
+      currentSection = sections[0]
+    }
+    if(currentSection)
+    setActiveSection(currentSection);
   };
 
-  const sidebarLinks = [
-    { key: 'Get Started', value: 'start' },
-    { key: 'Contat us', value: 'contect' },
-    { key: 'About us', value: 'abouts' },
-  ];
-  const Comp1 = () => {
-    return <div>
-      <h2>Comp 1</h2>
-      <p>Content for Contact Us option goes here.</p>
-    </div>;
+  window.addEventListener('resize', handleResize);
+  window.addEventListener('scroll', handleScroll);
+
+  return () => {
+    window.removeEventListener('resize', handleResize);
+    window.removeEventListener('scroll', handleScroll);
   };
-    const Comp2 = () => {
-      return <div>
-        <h2>Comp 2</h2>
-        <p>Content for Contact Us option goes here.</p>
-      </div>;
-    };
-    const Comp3 = () => {
-      return <div>
-        <h2>Comp 3</h2>
-        <p>Content for Contact Us option goes here.</p>
-      </div>;
+}, [sidebarLinks, setIsShown]);
+
+
+  const func = (id) => {
+    window.scrollTo(0, document.getElementById(id?.slice(1))?.offsetTop - 155.44);
+    navigate(id);
   };
-  const components = [<Content/>, <Comp2/>, <Comp3/>];
-  
+
   return (
-    <>
-    <Container
-    className={`sidebar${isCollapsed ? ' collapsed' : ''}`}
-    style={{ display: 'flex', paddingTop: '0', maxWidth:"100%" }}
-    >
-    <Row style={{ display: 'flex', flexDirection: 'column', width:"100%" }}>
-        <Col
-        xs={3}
-        style={{ width: isCollapsed ? '150px' : '350px', height: '100vh', position:"fixed"}}
-        >
-          <Button variant='primary' onClick={toggleCollapse}>
-            Toggle Sidebar
-            </Button>
-            <div style={{ display: 'flex', flexDirection: 'column',overflow:"scroll",height:"100%" }}>
-            {sidebarLinks.map((item, index) => (
-              <span onClick={() => setActiveContent(index)} className='item'>
-              {item.value}
-              </span>
-            ))}
+    <Row className='container sidebar-row'>
+      <Col md={4} lg={3} xl={3} xxl={2} className={shown ? 'col1' : 'hidden'}>
+        {!shown && (
+          <div>
+            <div className='sidebar-heading d-flex justify-content-between align-items-center'>
+              <h5 className='offcanvas-title' id='bdSidebarOffcanvasLabel'>
+                Browse docs
+              </h5>
+              <button onClick={() => setIsShown(true)} className='btn-close'></button>
+            </div>
+            <hr />
           </div>
-        </Col>
-        <Col xs={9} className='contentCol' style={{marginLeft:isCollapsed ? '150px' : '350px',}}>
-        <div>
-        {components[activeContent]}
+        )}
+        <div className='sidebar-links'>
+          {sidebarLinks.map((item, index) => (
+            <a className={activeSection === item?.id  ? "active ": "" } >
+              <span onClick={() => { func(item?.id); setIsShown(true)}} className='item'>
+                {item.value}
+              </span>
+            </a>
+          ))}
         </div>
-        </Col>
-        </Row>
-        </Container>
-        </>
+      </Col>
+      <Col sm={12} md={8} lg={9} xl={9} xxl={10} className='contentCol col2 mb-8'>
+        <div>{<Component />}</div>
+      </Col>
+    </Row>
   );
 };
 
