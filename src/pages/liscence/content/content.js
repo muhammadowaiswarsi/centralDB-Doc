@@ -4,7 +4,7 @@ const content = () => {
   return (
     <div className='container mt-4 mb-4'>
       <div className='row justify-content-center'>
-        <div >
+        <div>
           <div className='text'>
             <h1>License</h1>
             <p>
@@ -18,14 +18,14 @@ const content = () => {
               accessing or using the Project, you agree to be bound by this License.
             </p>
             <p>
-              <b>Grant of License</b>
+              <b id='Grant-of-License'>Grant of License</b>
               <br />
               Subject to the terms and conditions of this License, the Company grants you a limited,
               non-exclusive, non-transferable, revocable license to use the Project for your
               personal, non-commercial use.
             </p>
             <p>
-              <b>Restrictions on Use</b>
+              <b id='Restrictions-on-Use'>Restrictions on Use</b>
               <br />
               You agree not to:
             </p>
@@ -37,7 +37,7 @@ const content = () => {
               the Project <br />
             </p>
             <p>
-              <b>Intellectual Property</b>
+              <b id='Intellectual-Property'>Intellectual Property</b>
               <br />
               All intellectual property rights associated with the Project, including but not
               limited to trademarks, logos, service marks, and copyrighted materials, are owned by
@@ -45,7 +45,7 @@ const content = () => {
               Company's or its licensors' intellectual property except as expressly stated herein
             </p>
             <p>
-              <b>Termination</b>
+              <b id='Termination'>Termination</b>
               <br />
               The Company may terminate this License at any time without prior notice if you fail to
               comply with any of the terms and conditions contained herein. Upon termination, you
@@ -53,7 +53,7 @@ const content = () => {
               possession or control
             </p>
             <p>
-              <b>Disclaimer of Warranty</b>
+              <b id='Disclaimer-of-Warranty'>Disclaimer of Warranty</b>
               <br />
               The Project is provided on an "as is" basis, without warranty of any kind, express or
               implied. The Company disclaims all warranties, including but not limited to warranties
@@ -61,7 +61,7 @@ const content = () => {
               risk arising out of the use or performance of the Project remains with you.
             </p>
             <p>
-              <b>Limitation of Liability</b>
+              <b id='Limitation-of-Liability'>Limitation of Liability</b>54054
               <br />
               To the maximum extent permitted by applicable law, the Company and its ofcers,
               directors, employees, and agents shall not be liable for any direct, indirect,
@@ -70,14 +70,14 @@ const content = () => {
               with the use or inability to use the Project.
             </p>
             <p>
-              <b>Governing Law and Jurisdiction</b>
+              <b id='Governing-Law-and-Jurisdiction'>Governing Law and Jurisdiction</b>
               <br />
               This License shall be governed by and construed in accordance with the laws of
               [Jurisdiction]. Any dispute arising out of or relating to this License or your use of
               the Project shall be exclusively submitted to the competent courts of [Jurisdiction]
             </p>
             <p>
-              <b>Entire Agreement</b>
+              <b id='Entire-Agreement'>Entire Agreement</b>
               <br />
               This License constitutes the entire agreement between you and the Company concerning
               the Project and supersedes all prior or contemporaneous understandings,

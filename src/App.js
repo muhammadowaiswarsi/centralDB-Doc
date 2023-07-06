@@ -1,8 +1,11 @@
 import RoutesFile from './Routes';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-<RoutesFile/>
+    <BrowserRouter>
+      <RoutesFile />
+    </BrowserRouter>
   );
 }
 

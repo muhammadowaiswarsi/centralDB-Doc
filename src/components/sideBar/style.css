@@ -1,6 +1,5 @@
 .sidebar-row {
   display: flex;
-  padding-top: 155px;
   margin: auto;
 }
 
@@ -51,9 +50,10 @@ a:hover {
   width: 350px;
   height: 100vh;
   position: fixed;
-  z-index: 11;
+  z-index: 999999;
   background-color: white;
   left: 0;
+  top: 0;
 }
 
 
@@ -67,7 +67,6 @@ a:hover {
   }
 
   .col2 {
-    padding-top: 155px;
     margin: auto;
   }
 

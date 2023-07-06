@@ -4,7 +4,7 @@ const Content = () => {
   return (
     <div className='container mt-4 mb-4'>
       <div className='row justify-content-center'>
-        <div >
+        <div>
           <div className='text'>
             <h1>Legal</h1>
             <p>
@@ -18,7 +18,7 @@ const Content = () => {
               bound by these Terms.
             </p>
             <p>
-              <b>Disclaimer</b>  <br />
+              <b id='Disclaimer'>Disclaimer</b> <br />
               The information and materials provided on the Project are for general informational
               purposes only. The Company makes no representations or warranties of any kind, express
               or implied, about the accuracy, completeness, reliability, suitability, or
@@ -26,7 +26,7 @@ const Content = () => {
               any information or materials on the Project is at your own risk
             </p>
             <p>
-            <b>Limitation of Liability</b> <br />
+              <b id='Limitation-of-Liability'>Limitation of Liability</b> <br />
               To the maximum extent permitted by applicable law, the Company and its ofcers,
               directors, employees, and agents shall not be liable for any direct, indirect,
               incidental, special, consequential, or punitive damages, or any loss of profits or
@@ -34,7 +34,7 @@ const Content = () => {
               with your use of the Project or the information and materials contained therein.
             </p>
             <p>
-            <b>Third-Party Links</b> <br />
+              <b id='Third-Party-Links'>Third-Party Links</b> <br />
               The Project may contain links to third-party websites or resources. These links are
               provided for your convenience and do not signify endorsement or recommendation of such
               third-party websites or resources by the Company. The Company has no control over the
@@ -44,7 +44,7 @@ const Content = () => {
               such websites or resources.
             </p>
             <p>
-            <b>Intellectual Property</b> <br />
+              <b id='Intellectual-Property'>Intellectual Property</b> <br />
               All intellectual property rights associated with the Project, including but not
               limited to trademarks, logos, service marks, and copyrighted materials, are owned by
               the Company or its licensors. You are prohibited from using, reproducing,
@@ -52,18 +52,18 @@ const Content = () => {
               of the Company.
             </p>
             <p>
-            <b>Governing Law and Jurisdiction</b> <br />
+              <b id='Governing-Law-and-Jurisdiction'>Governing Law and Jurisdiction</b> <br />
               These Terms shall be governed by and construed in accordance with the laws of
               [Jurisdiction]. Any dispute arising out of or relating to these Terms or your use of
               the Project shall be exclusively submitted to the competent courts of [Jurisdiction].
             </p>
             <p>
-            <b>Severability</b> <br />
+              <b id='Severability'>Severability</b> <br />
               If any provision of these Terms is found to be invalid or unenforceable, the remaining
               provisions shall remain in full force and efect.
             </p>
             <p>
-            <b>Changes to these Terms</b> <br />
+              <b id='Changes-to-these-Terms'>Changes to these Terms</b> <br />
               The Company reserves the right to update or modify these Terms at any time without
               prior notice. Any changes will be efective immediately upon posting on the Project.
             </p>

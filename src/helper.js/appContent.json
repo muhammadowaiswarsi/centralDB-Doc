@@ -1,0 +1,230 @@
+{
+  "home page": [
+    {
+      "Central 7 DT": " C7 stands out as a unique blockchain platform dedicated to decentralized data transmission, distinguishing itself by leveraging a decentralized database architecture, thus elevating trust and reliability to unprecedented levels",
+      "path": "/"
+    },
+    {
+      "LOCAL DOWNLOAD": "LOCAL DOWNLOAD C7STW V12.24.5.2",
+      "path": "/#local-download"
+    },
+    {
+      "CLOUD INSTALLER": "CLOUD INSTALLER OC7CV12.3.4.88",
+      "path": "/#cloud-installer"
+    },
+    {
+      "Central 7 DT": "Central 7 DT DT stands for data transfer. With DT, anyone can extract data from the MySQL database and set up a reliable database exclusively for you or your clients, ensuring your privacy",
+      "path": "/#central-7=DT"
+    },
+    {
+      "CDCI Token": "CDCI Token The CDCI token (Central Database Currency infrastructure) is a currency that operates on the C7 network, facilitating secure and efficient money transfers within the database",
+      "path": "/#cdci-token"
+    }
+  ],
+  "docs": [
+    {
+      "C7 (Central' Generation Seven)": "C7 (Central' Generation Seven) C7 (Central' Generation Seven) is a blockchain based on the X11 algorithm, designed for transmitting data through the block explorer. We have opted to remove Mysql and other databases in favor of a decentralized database (C7) to optimize trust. This allows us to decentralize our own web and mobile apps, as well as those of others. Be self-sufficient in everything sudo apt-get update sudo apt-get upgrade",
+      "path": "/docs#C7-Central-Generation-Seven"
+    },
+    {
+      "Install the required dependencies": "Install the required dependencies  sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3  libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev libboost-all-dev  libboost-program-options-dev sudo apt-get install libminiupnpc-dev libzmq3-dev libprotobuf-dev protobuf-compiler unzip software-properties-common",
+      "path": "/docs#Required-dependencies"
+    },
+    {
+      "Install Berkeley DB for C7 (Central Generation Seven)": "Install Berkeley DB for C7 (Central Generation Seven)   sudo add-apt-repository ppa:bitcoin/bitcoin   sudo apt-get update  sudo apt-get install libdb4.8-dev libdb4.8++-dev",
+      "path": "/docs#Install-Berkeley-DB"
+    },
+    {
+      "Download the C7 and tools from Openc7": "Download the C7 and tools from Openc7 Manually Install Download daemon  wget api.server.openc7.com/daemon/openc7-daemon-linux.tar.gz -O openc7-daemon-linux.tar.gz Manually Install Download GT C7  wget api.server.openc7.com/daemon/c7-qt-linux.tar.gz -O c7-qt-linux.tar.gz",
+      "path": "/docs#Download-the-C7-and-tools-from-Openc7"
+    },
+    {
+      "Extract the tar files": "Extract the tar files tar -xzvf c7-daemon-linux.tar.gz  tar -xzvf c7-qt-linux.tar.gz",
+      "path": "/docs#Extract-tar-files"
+    },
+    {
+      "Install the OpenC7 and tools": "Install the OpenC7 and tools sudo mv c7 c7-cli c7-tx /usr/bin/",
+      "path": "/docs#Install-OpenC7-tools"
+    },
+    {
+      "Create the config file": "Create the config file mkdir $HOME/.c7 nano $HOME/.c7/c7.conf",
+      "path": "/docs#Create-config-file"
+    },
+    {
+      "Paste the following lines in c7.conf": "Paste the following lines in c7.conf rpcuser=??? rpcpassword=??? rpcallowip=127.0.0.1 rpcport=10037 listen=1 server=1 addnode=node.openc7.com",
+      "path": "/docs#Paste-following-lines-in-c7"
+    }
+  ],
+  "privacy policy": [
+    {
+      "Privacy Policy": " Last Updated: Thu 29 jun 00:50 Thank you for choosing Softywa LTD (Company) and using our project, CentralDB (Project). This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use our Project. We take your privacy seriously and are committed to safeguarding your personal information Information We Collect",
+      "path": "/privacy-policy"
+    },
+    {
+      "1.1 Personal Information": "1.1 Personal Information We may collect certain personal information from you when you use the Project. This may include, but is not limited to: Contact information (such as name, email address, and phone number) Usernames and passwords Information you provide when contacting our customer support",
+      "path": "/privacy-policy#1-1-Personal-Information"
+    },
+    {
+      "1.2 Usage Information": "1.2 Usage Information We may also collect non-personal information about your use of the Project, such as: Device information (such as IP address, browser type, and operating system) Log information (such as access dates and times, referring and exit pages, and clickstream data) Information about your interactions with the Project (such as the features you use, pages you visit, and search queries How We Use Your Information",
+      "path": "/privacy-policy#1-2-Usage-Information"
+    },
+    {
+      "2.1 Personal Information": "2.1 Personal Information 2.1 Personal Information We may use your personal information to: Provide and maintain the Project Respond to your inquiries and provide customer support Send you important notices and updates regarding the Project Communicate with you about products, services, ofers, and promotions",
+      "path": "/privacy-policy#2-1-Personal-Information"
+    },
+    {
+      "2.2 Usage Information": "2.2 Usage Information We may use non-personal information for various purposes, including: Analyzing and improving the Project Customizing your user experienceGenerating statistical data How We Share Your Information",
+      "path": "/privacy-policy#2-2-Usage-Information"
+    },
+    {
+      "3.1 Service Providers": "3.1 Service Providers We may engage trusted third-party service providers to assist us in providing and improving the Project. These service providers may have access to your personal information for the sole purpose of performing tasks on our behalf and are obligated not to disclose or use it for any other purpose",
+      "path": "/privacy-policy#3-1-Service-Providers"
+    },
+    {
+      "3.2 Legal Compliance": "3.2 Legal Compliance We may disclose your personal information if required by law or in response to valid requests by public authorities (e.g., a court or government agency)",
+      "path": "/privacy-policy#3-2-Legal-Compliance"
+    },
+    {
+      "3.3 Business Transfers": "3.3 Business Transfers In the event of a merger, acquisition, or sale of all or a portion of our assets, your personal information may be transferred to the acquiring entity",
+      "path": "/privacy-policy#3-3-Business-Transfers"
+    },
+    {
+      "Security": "Security We take reasonable measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. However, please be aware that no method of transmission over the internet or electronic storage is 100% secure and we cannot guarantee absolute security",
+      "path": "/privacy-policy#Security"
+    },
+    {
+      "Your Choices": "Your Choices You have the right to access, correct, update, or delete your personal information. You may also opt-out of receiving promotional communications from us. Please contact us using the information provided at the end of this Privacy Policy to exercise these rights",
+      "path": "/privacy-policy#Your-Choices"
+    },
+    {
+      "Children's Privacy": "Children's Privacy The Project is not intended for use by individuals under the age of 18. We do not knowingly collect personal information from children. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us immediately",
+      "path": "/privacy-policy#Childrens-Privacy"
+    },
+    {
+      "Changes to this Privacy Policy": "Changes to this Privacy Policy We may update this Privacy Policy from time to time. The most current version will be posted on our website. We encourage you to review this Privacy Policy periodically for any changes. Your continued use of the Project after the posting of changes will constitute your acceptance of those changes",
+      "path": "/privacy-policy#Changes-to-this-Privacy-Policy"
+    },
+    {
+      "Contact Us": "Contact Us If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at: Softywa LTD",
+      "path": "/privacy-policy#Contact-Us"
+    }
+  ],
+  "terms of use": [
+    {
+      "Terms of Use": " Last Updated: Thu 29 jun 00:50 Welcome to CentralDB (Project) provided by Softywa LTD (Company). These Terms of Use (Terms) govern your use of the Project. By accessing or using the Project, you agree to be bound by these Terms Use of the Project",
+      "path": "/terms-of-use"
+    },
+    {
+      "1.1 Eligibility": "1.1 Eligibility You must be at least 18 years old to use the Project. By using the Project, you represent and warrant that you are of legal age to form a binding contract with the Company",
+      "path": "/terms-of-use#1-1-Eligibility"
+    },
+    {
+      "1.2 User Account": "1.2 User Account To use certain features of the Project, you may be required to create a user account. You are responsible for maintaining the confidentiality of your account credentials and for any activities that occur under your account. You agree to provide accurate and complete information when creating your account and to promptly update your account information as needed",
+      "path": "/terms-of-use#1-2-User-Account"
+    },
+    {
+      "1.3 Prohibited Conduct": "1.3 Prohibited Conduct You agree not to Use the Project for any unlawful purpose or in violation of any applicable laws or regulations Engage in any activity that could interfere with or disrupt the functioning of the Project Impersonate any person or entity, or falsely state or otherwise misrepresent your afliation with a person or entity Attempt to gain unauthorized access to the Project or any related systems or networks Use the Project to distribute unsolicited commercial messages or spam Collect or harvest any information from the Project without our prior written consent Intellectual Property",
+      "path": "/terms-of-use#1-3-Prohibited-Conduct"
+    },
+    {
+      "2.1 Ownership": "2.1 Ownership The Project and all intellectual property rights associated with it are owned by the Company. The Company reserves all rights not expressly granted to you in these Terms",
+      "path": "/terms-of-use#2-1-Ownership"
+    },
+    {
+      "2.2 Limited License": "2.2 Limited License Subject to your compliance with these Terms, the Company grants you a limited, non-exclusive, non-transferable, revocable license to access and use the Project for your personal, non-commercial use",
+      "path": "/terms-of-use#2-2-Limited-License"
+    },
+    {
+      "2.3 Restrictions": "2.3 Restrictions You agree not to Copy, modify, or create derivative works of the Project Reverse engineer, decompile,or disassemble any portion of the Project Remove or modify any copyright, trademark, or other proprietary notices contained in the Project Disclaimer of Warranties The Project is provided on an as is and as available basis. The Company does not warrant that the Project will be error-free, uninterrupted, or secure. Your use of the Project is at your own risk. The Company disclaims all warranties, whether express, implied, or statutory, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement",
+      "path": "/terms-of-use#2-3-Restrictions"
+    },
+    {
+      "Limitation of Liability": "Limitation of Liability To the maximum extent permitted by applicable law, the Company and its ofcers, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, arising out of your use of the Project or these Terms",
+      "path": "/terms-of-use#Limitation-of-Liability"
+    },
+    {
+      "Indemnification": "Indemnification You agree to indemnify and hold the Company and its officers, directors, employees, and agents harmless from any claims, demands, losses, liabilities, costs, or expenses, including reasonable attorneys' fees, arising out of or related to your use of the Project, violation of these Terms, or infringement of any intellectual property or other rights of any person or entity",
+      "path": "/terms-of-use#Indemnification"
+    },
+    {
+      "Governing Law and Jurisdiction": "Governing Law and Jurisdiction These Terms shall be governed by and construed in accordance with the laws of [Jurisdiction]. Any legal action or proceeding arising out of or related to these Terms or your use of the Project shall be brought exclusively in the courts of [Jurisdiction]",
+      "path": "/terms-of-use#Governing-Law-and-Jurisdiction"
+    },
+    {
+      "Changes to these Terms": "Changes to these Terms The Company reserves the right to update or modify these Terms at any time without prior notice. Any changes will be effective immediately upon posting on the Project",
+      "path": "/terms-of-use#Changes-to-these-Terms"
+    }
+  ],
+  "legal": [
+    {
+      "Legal": " Last Updated: Thu 29 jun 00:50 The use of CentralDB (Project) provided by Softywa LTD (Company) is subject to the following legal terms (Terms). By accessing or using the Project, you agree to be bound by these Terms",
+      "path": "/legal"
+    },
+    {
+      "Disclaimer": "Disclaimer The information and materials provided on the Project are for general informational purposes only. The Company makes no representations or warranties of any kind, express or implied, about the accuracy, completeness, reliability, suitability, or availability of the information and materials contained in the Project. Your use of any information or materials on the Project is at your own risk",
+      "path": "/legal#Disclaimer"
+    },
+    {
+      "Limitation of Liability": "Limitation of Liability To the maximum extent permitted by applicable law, the Company and its ofcers, directors, employees, and agents shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, arising out of or in connection with your use of the Project or the information and materials contained therein",
+      "path": "/legal#Limitation-of-Liability"
+    },
+    {
+      "Third-Party Links": "Third-Party Links The Project may contain links to third-party websites or resources. These links are provided for your convenience and do not signify endorsement or recommendation of such third-party websites or resources by the Company. The Company has no control over the content or availability of these websites or resources and shall not be responsible for any loss or damage caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such websites or resources",
+      "path": "/legal#Third-Party-Links"
+    },
+    {
+      "Intellectual Property": "Intellectual Property All intellectual property rights associated with the Project, including but not limited to trademarks, logos, service marks, and copyrighted materials, are owned by the Company or its licensors. You are prohibited from using, reproducing, distributing, or modifying any intellectual property without the prior written consent of the Company",
+      "path": "/legal#Intellectual-Property"
+    },
+    {
+      "Governing Law and Jurisdiction": "Governing Law and Jurisdiction These Terms shall be governed by and construed in accordance with the laws of [Jurisdiction]. Any dispute arising out of or relating to these Terms or your use of the Project shall be exclusively submitted to the competent courts of [Jurisdiction]",
+      "path": "/legal#Governing-Law-and-Jurisdiction"
+    },
+    {
+      "Severability": "Severability If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in full force and efect",
+      "path": "/legal#Severability"
+    },
+    {
+      "Changes to these Terms": "Changes to these Terms The Company reserves the right to update or modify these Terms at any time without prior notice. Any changes will be efective immediately upon posting on the Project By using the Project, you agree to be bound by the most current version of these Terms. It is recommended to review these Terms periodically for any changes If you have any questions or concerns about these legal terms, please contact us at: Softywa LTD",
+      "path": "/legal#Changes-to-these-Terms"
+    }
+  ],
+  "license": [
+    {
+      "License": " Last Updated: Thu 29 jun 00:50 The CentralDB project (Project) provided by Softywa LTD (Company) is licensed to you under the terms and conditions of the following license agreement (License) By accessing or using the Project, you agree to be bound by this License",
+      "path": "/license"
+    },
+    {
+      "Grant of License": "Grant of License Subject to the terms and conditions of this License, the Company grants you a limited, non-exclusive, non-transferable, revocable license to use the Project for your personal, non-commercial use",
+      "path": "/license#Grant-of-License"
+    },
+    {
+      "Restrictions on Use": "Restrictions on Use You agree not to: Modify, adapt, or create derivative works based on the Project Copy, reproduce, distribute, or transfer the Project or any portion thereof Reverse engineer, decompile, or disassemble the Project Remove or modify any copyright, trademark, or other proprietary notices contained in the Project",
+      "path": "/license#Restrictions-on-Use"
+    },
+    {
+      "Intellectual Property": "Intellectual Property All intellectual property rights associated with the Project, including but not limited to trademarks, logos, service marks, and copyrighted materials, are owned by the Company or its licensors. This License does not grant you any rights to use the Company's or its licensors' intellectual property except as expressly stated herein",
+      "path": "/license#Intellectual-Property"
+    },
+    {
+      "Termination": "Termination The Company may terminate this License at any time without prior notice if you fail to comply with any of the terms and conditions contained herein. Upon termination, you must cease all use of the Project and destroy any copies of the Project in your possession or control",
+      "path": "/license#Termination"
+    },
+    {
+      "Disclaimer of Warranty": "Disclaimer of Warranty The Project is provided on an as is basis, without warranty of any kind, express or implied. The Company disclaims all warranties, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement. The entire risk arising out of the use or performance of the Project remains with you",
+      "path": "/license#Disclaimer-of-Warranty"
+    },
+    {
+      "Limitation of Liability": "Limitation of Liability To the maximum extent permitted by applicable law, the Company and its ofcers, directors, employees, and agents shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, arising out of or in connection with the use or inability to use the Project",
+      "path": "/license#Limitation-of-Liability"
+    },
+    {
+      "Governing Law and Jurisdiction": "Governing Law and Jurisdiction This License shall be governed by and construed in accordance with the laws of [Jurisdiction]. Any dispute arising out of or relating to this License or your use of the Project shall be exclusively submitted to the competent courts of [Jurisdiction]",
+      "path": "/license#Governing-Law-and-Jurisdiction"
+    },
+    {
+      "Entire Agreement": "Entire Agreement This License constitutes the entire agreement between you and the Company concerning the Project and supersedes all prior or contemporaneous understandings, representations, or agreements, whether written or oral If you have any questions or concerns about this License, please contact us at: Softywa LTD",
+      "path": "/license#Entire-Agreement"
+    }
+  ]
+}

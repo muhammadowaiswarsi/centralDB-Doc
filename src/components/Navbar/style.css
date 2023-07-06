@@ -1,3 +1,21 @@
+.searchbar {
+    width: 280px;
+}
+
+#list-timezone {
+    display: block;
+    background-color: lightgray;
+    position: absolute;
+    width: 280px;
+    z-index: 999;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
 .navDiv {
     background-color: #ffffff;
     border-bottom-style: solid;
@@ -26,12 +44,9 @@
     font-weight: 500;
 }
 
-.searchInput {
-    background: #EFEEF8;
-    border-color: #EFEEF8;
+.m-r-3 {
+    margin-right: 3px;
 }
-
-
 
 
 .actives {
@@ -47,11 +62,8 @@
     display: none;
 }
 
-@media screen and (max-width: 340px) {
-    .searchInput {
-        display: none;
-    }
-
+.secondNav {
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 769px) {
@@ -60,5 +72,35 @@
         margin-right: 10px;
         font-size: 30px;
         cursor: pointer;
+    }
+
+    .searchbar {
+        margin-top: 15px;
+    }
+
+    .secondNav {
+        flex-direction: column !important;
+    }
+
+    .M-auto {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .searchbar {
+        width: 260px;
+    }
+
+    #list-timezone {
+        width: 260px;
+    }
+
+    li a {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 14px;
     }
 }
