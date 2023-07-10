@@ -6,7 +6,7 @@ const RoutesFile = () => {
   const location = useLocation();
   useEffect(() => {
     if (location.hash) {
-      const element = document.getElementById(location.hash.slice(1));
+      const element = document.getElementById(location.hash.replaceAll('#', ''));
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }

@@ -2,11 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router';
 import './style.css';
+import { generateDocsId } from '../../helper.js/docs';
 
-const App = ({ shown, setIsShown, sidebarLinks, Component }) => {
-  const [activeSection, setActiveSection] = useState(sidebarLinks[0].id);
+const App = ({ shown, setIsShown, sidebarLinks, Component, ComponentProps }) => {
+  const [activeSection, setActiveSection] = useState(generateDocsId(sidebarLinks[0]));
   const navigate = useNavigate();
-  console.log(activeSection, 'activeSection');
+
+  useEffect(() => {
+    setActiveSection(generateDocsId(sidebarLinks[0]));
+  }, [sidebarLinks]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -16,7 +20,7 @@ const App = ({ shown, setIsShown, sidebarLinks, Component }) => {
     };
 
     const handleScroll = () => {
-      const sections = sidebarLinks.map((item) => item.id);
+      const sections = sidebarLinks.map((item) => generateDocsId(item));
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
       const bodyHeight = document.body.clientHeight;
@@ -30,7 +34,7 @@ const App = ({ shown, setIsShown, sidebarLinks, Component }) => {
 
       let currentSection = '';
       for (let i = sections.length - 1; i >= 0; i--) {
-        const section = document.getElementById(sections[i]?.slice(1));
+        const section = document.getElementById(sections[i]?.replaceAll('#', ''));
         const sectionTop = section?.offsetTop - 155.44;
         const sectionBottom = sectionTop + section?.offsetHeight;
 
@@ -39,7 +43,10 @@ const App = ({ shown, setIsShown, sidebarLinks, Component }) => {
           break;
         }
       }
-      if (scrollPosition < document.getElementById(sections[0]?.slice(1))?.offsetTop - 155.44) {
+      if (
+        scrollPosition <
+        document.getElementById(sections[0]?.replaceAll('#', ''))?.offsetTop - 155.44
+      ) {
         currentSection = sections[0];
       }
       if (currentSection) setActiveSection(currentSection);
@@ -55,8 +62,9 @@ const App = ({ shown, setIsShown, sidebarLinks, Component }) => {
   }, [sidebarLinks, setIsShown]);
 
   const func = (id) => {
-    window.scrollTo(0, document.getElementById(id?.slice(1))?.offsetTop - 155.44);
+    window.scrollTo(0, document.getElementById(id.replaceAll('#', ''))?.offsetTop - 155.44);
     navigate(id);
+    setActiveSection(id);
   };
 
   return (
@@ -75,22 +83,22 @@ const App = ({ shown, setIsShown, sidebarLinks, Component }) => {
         )}
         <div className='sidebar-links'>
           {sidebarLinks.map((item, index) => (
-            <a className={activeSection === item?.id ? 'active ' : ''}>
+            <a className={activeSection == generateDocsId(item) ? 'active ' : ''}>
               <span
                 onClick={() => {
-                  func(item?.id);
+                  func(generateDocsId(item));
                   setIsShown(true);
                 }}
                 className='item'
               >
-                {item.value}
+                {item.replaceAll('#', '')}
               </span>
             </a>
           ))}
         </div>
       </Col>
       <Col sm={12} md={8} lg={9} xl={9} xxl={10} className='contentCol col2 mb-8'>
-        <div>{<Component />}</div>
+        <div>{<Component {...ComponentProps} />}</div>
       </Col>
     </Row>
   );

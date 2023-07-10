@@ -13,7 +13,6 @@ const Navbar = ({ setIsShown, shown }) => {
   const [matchtext, setIsMatchText] = useState([]);
   const navigate = useNavigate();
   const handleNavigation = (path) => {
-    console.log(path, 'path');
     navigate(path);
     window.scrollTo(0, 0);
   };
@@ -96,8 +95,10 @@ const Navbar = ({ setIsShown, shown }) => {
               </li>
               <li className='nav-item'>
                 <button
-                  className={`nav-link btn-hover ${location?.pathname === '/' ? 'actives' : ''}`}
-                  onClick={() => handleNavigation('/')}
+                  className={`nav-link btn-hover ${
+                    location?.pathname === '/status' ? 'actives' : ''
+                  }`}
+                  onClick={() => handleNavigation('/status')}
                 >
                   Status
                 </button>

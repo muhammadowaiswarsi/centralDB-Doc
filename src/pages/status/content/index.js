@@ -5,7 +5,10 @@ import { getReadmeData } from '../../../helper.js/getReadmeData';
 
 const Content = ({ content, setContent }) => {
   useEffect(() => {
-    getReadmeData('https://raw.githubusercontent.com/Centraldb/c7/main/README.md', setContent);
+    getReadmeData(
+      'https://raw.githubusercontent.com/statsig-io/statuspage/main/README.md',
+      setContent,
+    );
   }, []);
 
   return (

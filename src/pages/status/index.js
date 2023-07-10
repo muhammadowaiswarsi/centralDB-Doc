@@ -4,7 +4,7 @@ import Footer from '../../components/Footer';
 import Sidebar from '../../components/sideBar';
 import Content from './content';
 
-const Docs = () => {
+const Status = () => {
   const [shown, setIsShown] = useState(true);
   const [content, setContent] = useState([]);
 
@@ -23,4 +23,4 @@ const Docs = () => {
   );
 };
 
-export default Docs;
+export default Status;
