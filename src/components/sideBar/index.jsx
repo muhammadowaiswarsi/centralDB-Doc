@@ -31,8 +31,8 @@ const App = ({ shown, setIsShown, sidebarLinks, Component }) => {
       let currentSection = '';
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = document.getElementById(sections[i]?.slice(1));
-        const sectionTop = section.offsetTop - 155.44;
-        const sectionBottom = sectionTop + section.offsetHeight;
+        const sectionTop = section?.offsetTop - 155.44;
+        const sectionBottom = sectionTop + section?.offsetHeight;
 
         if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
           currentSection = sections[i];
