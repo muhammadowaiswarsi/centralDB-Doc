@@ -2,6 +2,10 @@
     width: 280px;
 }
 
+.git-icon {
+    color: #5E77FF;
+}
+
 #list-timezone {
     display: block;
     background-color: lightgray;

@@ -9,7 +9,7 @@ const App = ({ shown, setIsShown, sidebarLinks, Component, ComponentProps }) => 
   const navigate = useNavigate();
 
   useEffect(() => {
-    setActiveSection(generateDocsId(sidebarLinks[0]));
+    if (shown) setActiveSection(generateDocsId(sidebarLinks[0]));
   }, [sidebarLinks]);
 
   useEffect(() => {

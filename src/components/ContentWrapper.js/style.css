@@ -1,0 +1,25 @@
+.anchor {
+  color: #0969da;
+}
+
+.steps {
+  margin-top: 80px;
+}
+
+.anchor:hover {
+  color: #0969da;
+  text-decoration: underline;
+}
+
+.bullet-list {
+  list-style: disc;
+}
+
+.code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  color: black;
+  background-color: lightgray;
+  border-radius: 6px;
+}

@@ -34,8 +34,8 @@ a:hover {
 .col1 {
   border-right: 1px solid black;
   position: sticky;
-  top: 155.4px;
-  height: calc(100vh - 155.4px);
+  top: 76.44px;
+  height: calc(100vh - 76.44px);
 }
 
 .sidebar-links {

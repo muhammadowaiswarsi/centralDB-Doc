@@ -14,7 +14,7 @@ export const getReadmeData = (api, setContent) => {
                 newObj.prevVal = '```';
                 newObj.isStart = true;
               } else if (!!prev.prevVal && !!prev.isStart && !curr.trim().startsWith('```')) {
-                newObj.prevVal += curr.trim();
+                newObj.prevVal += curr.trim() + '\n';
               } else if (!!prev.prevVal && !!prev.isStart && !!curr.trim().startsWith('```')) {
                 newObj.isStart = false;
                 newObj.prevVal = '';

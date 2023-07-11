@@ -8,7 +8,7 @@ const RoutesFile = () => {
     if (location.hash) {
       const element = document.getElementById(location.hash.replaceAll('#', ''));
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        window.scrollTo({ top: element.offsetTop - 100 });
       }
     }
   }, [location]);

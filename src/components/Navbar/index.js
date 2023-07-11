@@ -85,12 +85,13 @@ const Navbar = ({ setIsShown, shown }) => {
             <ul className='navbar-nav M-auto'>
               <li className='nav-item'>
                 <a
-                  className={`navLink nav-link btn-hover`}
+                  className={`navLink nav-link`}
                   target='_blank'
                   href='https://github.com/centraldb'
                   rel='noreferrer'
                 >
-                  <i className='fab fa-github m-r-3'></i>Github
+                  <i className='fab fa-github m-r-3'></i>
+                  <span className='anchor'>Github</span>
                 </a>
               </li>
               <li className='nav-item'>
