@@ -85,6 +85,7 @@ const App = ({ shown, setIsShown, sidebarLinks, Component, ComponentProps }) => 
           {sidebarLinks.map((item, index) => (
             <a className={activeSection == generateDocsId(item) ? 'active ' : ''}>
               <span
+                style={{ width: '100%' }}
                 onClick={() => {
                   func(generateDocsId(item));
                   setIsShown(true);
