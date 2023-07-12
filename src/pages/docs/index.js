@@ -3,10 +3,11 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Sidebar from '../../components/sideBar';
 import Content from './content';
+import { useSelector } from 'react-redux';
 
 const Docs = () => {
   const [shown, setIsShown] = useState(true);
-  const [content, setContent] = useState([]);
+  const state = useSelector((state) => state?.data?.docs);
 
   return (
     <>
@@ -14,9 +15,8 @@ const Docs = () => {
       <Sidebar
         shown={shown}
         setIsShown={setIsShown}
-        sidebarLinks={content.filter((item) => item.trim().startsWith('#'))}
+        sidebarLinks={state.filter((item) => item.trim().startsWith('#'))}
         Component={Content}
-        ComponentProps={{ content, setContent }}
       />
       <Footer />
     </>

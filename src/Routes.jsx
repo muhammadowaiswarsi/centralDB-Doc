@@ -1,8 +1,15 @@
 import React, { useEffect } from 'react';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { routes } from './helper.js/routeshelper';
+import { getAllApisData } from './helper.js/getReadmeData';
+import { useDispatch } from 'react-redux';
 
 const RoutesFile = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    getAllApisData(dispatch);
+  }, []);
+
   const location = useLocation();
   useEffect(() => {
     if (location.hash) {

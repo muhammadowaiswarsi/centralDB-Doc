@@ -8,16 +8,28 @@
 
 #list-timezone {
     display: block;
-    background-color: lightgray;
+    background-color: #ffff;
+    color: green;
     position: absolute;
     width: 280px;
     z-index: 999;
-    padding-left: 10px;
-    padding-top: 5px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     max-height: 300px;
-    overflow-y: scroll;
+    overflow-y: auto;
+}
+
+#list-timezone::-webkit-scrollbar {
+    width: 3px;
+}
+
+#list-timezone::-webkit-scrollbar-track {
+    background-color: #ccc;
+}
+
+#list-timezone::-webkit-scrollbar-thumb {
+    background-color: green;
 }
 
 .navDiv {

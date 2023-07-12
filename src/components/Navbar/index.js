@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import c7text from '../../assets/img/c7-text.svg';
 import '../Navbar/style.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useNavigate, useLocation } from 'react-router-dom';
 import jsonData from '../../helper.js/appContent.json';
+import { generateJsonForSearching } from '../../helper.js/getReadmeData';
+import { useSelector } from 'react-redux';
 
 const Navbar = ({ setIsShown, shown }) => {
   const location = useLocation();
   const [search, setSearch] = useState(false);
   const [value, setValue] = useState();
+  const state = useSelector((state) => state?.data);
   const [matchtext, setIsMatchText] = useState([]);
   const navigate = useNavigate();
   const handleNavigation = (path) => {
@@ -17,10 +20,19 @@ const Navbar = ({ setIsShown, shown }) => {
     window.scrollTo(0, 0);
   };
 
+  const searchData = useMemo(
+    () => ({
+      ...jsonData,
+      docs: generateJsonForSearching(state?.docs, '/docs'),
+      status: generateJsonForSearching(state?.status, '/status'),
+    }),
+    [state?.docs],
+  );
+
   const autoSearch = (searchText) => {
     if (searchText) {
       setIsMatchText(
-        Object.values(jsonData)
+        Object.values(searchData)
           .flatMap((item) => {
             const filterData = item.filter((item1) => {
               const filteredSearchData = Object.values(item1)[0];
@@ -134,18 +146,22 @@ const Navbar = ({ setIsShown, shown }) => {
               />
               {search && (
                 <datalist id='list-timezone'>
-                  {matchtext?.map(({ text, path }, id) => {
-                    return (
-                      <option key={id} onClick={() => Submitt(path)}>
-                        ...
-                        {text.slice(
-                          Math.max(text.toLowerCase().indexOf(value.toLowerCase()) - 13, 0),
-                          text.toLowerCase().indexOf(value.toLowerCase()) + 13,
-                        )}
-                        ...
-                      </option>
-                    );
-                  })}
+                  {matchtext?.length ? (
+                    matchtext.map(({ text, path }, id) => {
+                      return (
+                        <option style={{ padding: '5px' }} key={id} onClick={() => Submitt(path)}>
+                          ...
+                          {text.slice(
+                            Math.max(text.toLowerCase().indexOf(value.toLowerCase()) - 13, 0),
+                            text.toLowerCase().indexOf(value.toLowerCase()) + 13,
+                          )}
+                          ...
+                        </option>
+                      );
+                    })
+                  ) : (
+                    <option>No Data Found...</option>
+                  )}
                 </datalist>
               )}
             </div>

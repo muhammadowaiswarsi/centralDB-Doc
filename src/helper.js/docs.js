@@ -1,5 +1,5 @@
 export const generateDocsId = (item) => {
-  return '#' + item?.slice(1).trim().replaceAll(' ', '-').replaceAll('.', '');
+  return '#' + item?.slice(1).trim().replaceAll(' ', '-').replaceAll('.', '').toLowerCase();
 };
 
 export const generateRelativePath = (absolutePath, relativePath) => {
