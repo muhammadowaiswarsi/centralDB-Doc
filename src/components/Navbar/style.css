@@ -8,13 +8,13 @@
 
 #list-timezone {
     display: block;
-    background-color: #ffff;
+    background-color: aliceblue;
     color: green;
     position: absolute;
     width: 280px;
     z-index: 999;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     max-height: 300px;
     overflow-y: auto;
