@@ -1,22 +1,12 @@
-import React, { useEffect } from 'react';
-import ContentWrapper from '../../../components/ContentWrapper.js/ContentWrapper';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import { statusApi } from '../../../constatnt/constant';
+import ReadmeDataWrapper from '../../../components/readmeDataWrapper/ReadmeDataWrapper';
 
 const Content = () => {
   const state = useSelector((state) => state?.data?.status);
 
-  return (
-    <div style={{ marginBottom: '120px' }} class='container'>
-      <div class='row mt-3'>
-        <div class='col-lg-9 col-lg-offset-2 col-md-11 col-md-offset-1 m-auto'>
-          {state?.map((item, index) => {
-            return <ContentWrapper index={index} value={item} url={statusApi} />;
-          })}
-        </div>
-      </div>
-    </div>
-  );
+  return <ReadmeDataWrapper state={state} url={statusApi} />;
 };
 
 export default Content;

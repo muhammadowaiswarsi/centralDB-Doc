@@ -55,7 +55,7 @@ export const generateJsonForSearching = (content, path) => {
       ).data,
   ).map(([key, val]) => ({
     [key]: val,
-    path: `${path}#${generateDocsId(`#${key}`)}`,
+    path: `${path}#${generateDocsId(`#${key}`).replaceAll('#', '')}`,
   }));
 };
 
